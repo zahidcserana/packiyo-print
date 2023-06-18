@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+    <title>Packiyo Printing Service</title>
+</head>
+<body>
+<div class="container header">
+    <div class="inner">
+        <div class="logo"></div>
+    </div>
+</div>
+<div class="container layout">
+    <div class="container">
+        <div class="inner">
+            <div class="row">
+                <div class="col col-xxl-100">
+                    <div class="form-holder">
+                        <div class="form">
+                            <form id="tenantForm">
+                                <div id="error-message" class="alerts"></div>
+                                <fieldset>
+                                    <h6 class="col col-xxl-100 no-margin">Please enter tenant name</h6>
+                                    <div class="col col-xxl-100 no-margin no-padding field">
+                                        <label for="url">Tenant Name</label>
+                                        <input type="text" name="url" class="col-xxl-100" id="url" placeholder="Enter here..">
+                                    </div>
+                                </fieldset>
+
+                                <div class="Actions">
+                                    <button type="submit" class="button col-xxl-100">
+                                        Save
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./renderer.js"></script>
+</body>
+</html>
